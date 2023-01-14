@@ -14,5 +14,5 @@ JAVA&SPRING 스터디 팀원들과 함께하는 알고리즘 챌린지 (2023.01.
 | [김민우](https://github.com/kmw2378) | [길가은](https://github.com/rlfrkdms1) | [최보현](https://github.com/Brilly-Bohyun) |
 | :-: | :-: | :-: |
 | ![image](https://user-images.githubusercontent.com/83744709/212283218-78f4db00-6530-411e-becc-d93161f81035.png?size=200) | ![image](https://user-images.githubusercontent.com/83744709/212281564-acac7f5c-ce83-45e2-8b3c-1579f5f6898a.png?size=200) | ![image](https://user-images.githubusercontent.com/83744709/212281310-471a7dd8-11a9-4d01-83aa-8a6338b24bc3.png?size=200) |
-| [CodingTestRepository](https://github.com/kmw2378/CodingTestRepository) | [AlgorithmChallenge](https://github.com/rlfrkdms1/AlgorithmChallenge) | |
+| [CodingTestRepository](https://github.com/kmw2378/CodingTestRepository) | [AlgorithmChallenge](https://github.com/rlfrkdms1/AlgorithmChallenge) |[Algoritm-Diary](https://github.com/Brilly-Bohyun/Algorithm-Diary) |
 </div>
