@@ -1,4 +1,4 @@
-package level1;
+package Programmers.level1;
 
 public class TheNearestSameLetter {
 
