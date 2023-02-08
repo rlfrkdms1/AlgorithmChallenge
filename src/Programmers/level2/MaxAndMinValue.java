@@ -37,7 +37,7 @@ public class MaxAndMinValue {
      * 왜 int배열이 아니고 Integer 배열이지 ..?
      * answer를 안쓰고 그냥 반환해도 될 것 같다. 
      */
-    static class exSolution{
+    static class ExSolution {
         class Solution {
             public String solution(String s) {
                 String answer = "";
