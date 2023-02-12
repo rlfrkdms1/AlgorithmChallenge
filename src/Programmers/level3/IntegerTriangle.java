@@ -66,6 +66,35 @@ public class IntegerTriangle {
     }
 
     /**
+     * dfs 연습
+     * dfs로 풀면 최대 경우의 수가 500만번이 넘어가는 2^499이기 때문에 비효율적이다.
+     */
+    static class ExampleDFS {
+        int max;
+        int[][] triangle;
+
+        public int solution_dfs(int[][] triangle) {
+            this.triangle = triangle;
+            max = 0;
+            dfs(0, 0, 0);
+            return max;
+        }
+
+        public void dfs(int i, int j, int temp) {
+
+            if (i >= triangle.length || j >= triangle.length) {
+                if (temp > max) {
+                    max = temp;
+                }
+                return;
+            }
+            temp+=triangle[i][j];
+            dfs(i + 1, j, temp);
+            dfs(i + 1, j + 1, temp);
+        }
+    }
+    
+    /**
      * 이전에 계산한 값을 저장해두는 것을 메모이제이션이라고 하는데, 이를 triangle에 했다.
      * 아래의 풀이는 내 풀이와 다르게 아래에서부터 시작해 이러한 메모이제이션이 가능했다.
      * (나는 (1,1)일때 (2,1)과 (2,2)를 연산하고 (1,2)일 때 (2,2),(2,3)을 계산해 이 때 기존의 (2,2)와 새로운 (2,2)를 비교하는 방법을 사용했다.
