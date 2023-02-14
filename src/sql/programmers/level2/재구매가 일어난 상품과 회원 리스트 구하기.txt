@@ -1,0 +1,10 @@
+-- GROUP BY -> HAVING -> ORDER BY 순으로 작성한다.
+-- HAVING에는 GROUP BY 한 것에 대한 조건을 거는 것이다.
+-- 테이블에 대한 조건을 걸 시엔 WHERE를 사용하도록 하자.
+-- GROUP BY로 한가지 컬럼 뿐만 아니라 2개 이상의 컬럼을 묶을 수 있다.
+
+SELECT USER_ID, PRODUCT_ID
+    FROM ONLINE_SALE
+    GROUP BY USER_ID, PRODUCT_ID
+    HAVING COUNT(*)>=2
+    ORDER BY USER_ID, PRODUCT_ID DESC;
