@@ -1,0 +1,8 @@
+-- DATE_FORMAT을 사용한 DATE를 ORDER할 때는 Alias를 활용해야한다.
+
+-- where의 조건절이 '또는'일 경우 OR를 사용할 수 있다.
+
+SELECT DR_NAME, DR_ID, MCDP_CD, DATE_FORMAT(HIRE_YMD,'%Y-%m-%d') AS HIRE_YMD
+   FROM DOCTOR
+   WHERE (MCDP_CD = 'CS' OR MCDP_CD = 'GS')
+   ORDER BY HIRE_YMD DESC, DR_NAME;
