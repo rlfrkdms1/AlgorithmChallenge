@@ -1,7 +1,4 @@
-package Programmers.level2;
-
-import java.util.Arrays;
-import java.util.stream.Collectors;
+package algorithm.programmers.level2;
 
 public class MakeJadenCase {
 

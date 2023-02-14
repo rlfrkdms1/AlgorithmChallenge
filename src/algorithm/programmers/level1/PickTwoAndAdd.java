@@ -1,4 +1,4 @@
-package Programmers.level1;
+package algorithm.programmers.level1;
 
 import java.util.ArrayList;
 import java.util.List;

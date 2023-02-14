@@ -1,4 +1,4 @@
-package Programmers.level2;
+package algorithm.programmers.level2;
 
 import java.util.ArrayList;
 import java.util.HashMap;
