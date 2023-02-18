@@ -47,13 +47,14 @@ class ComplexNumbering {
         group = new HashMap<>();
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
-                if(!visited[i][j]){
+                if(!visited[i][j]&&map[i][j]){
                     dfs(i,j,groupId);
                 }
                 groupId++;
             }
         }
 
+        System.out.println(group.size());
         group.entrySet().stream().sorted(Map.Entry.comparingByValue())
                 .forEach(entry -> System.out.println(entry.getValue()));
 
