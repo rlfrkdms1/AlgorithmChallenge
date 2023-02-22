@@ -1,0 +1,8 @@
+-- i의 datetime이 o의 datetime보다 느린 경우 -> datetime이 더 최근임 -> i.datetime > o.datetime
+
+SELECT i.animal_id, i.name
+from animal_outs o
+join animal_ins i
+on o.animal_id = i.animal_id
+where i.datetime > o.datetime
+order by i.datetime;
