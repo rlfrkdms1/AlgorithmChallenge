@@ -1,0 +1,13 @@
+-- review를 가장 많이 적은 사람
+-- max(count(*))는 안되는 쿼리이다.
+
+SELECT m.member_name, r.review_text, date_format(r.review_date, '%Y-%m-%d') as 'review_date'
+from rest_review r
+join member_profile m
+on r.member_id = m.member_id
+where r.member_id = (select member_id
+                        from rest_review
+                        group by member_id
+                        order by count(member_id) desc
+                        limit 1)
+order by r.review_date, r.review_text;
