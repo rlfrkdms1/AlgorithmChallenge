@@ -1,0 +1,5 @@
+-- 10000원 단위로 그룹핑 하는 것이 문제였는데, TRUNCATE를 사용해 나누기 후 버림을 함으로써 해결할 수 있었다.
+-- TRUNCATE(버림할 컬럼, 버림할 소수점 자리)
+
+SELECT TRUNCATE(PRICE / 10000, 0) * 10000 AS 'PRICE_GROUP', COUNT(PRODUCT_ID) AS 'PRODUCT'
+FROM PRODUCT GROUP BY PRICE_GROUP ORDER BY PRICE_GROUP;
