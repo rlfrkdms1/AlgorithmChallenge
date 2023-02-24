@@ -1,0 +1,8 @@
+-- group by 를 amount별로가 아니라 id별로 묶어서 amount를 sum해야한다.
+-- 무조건 sum 등의 함수를 사용하는 컬럼을 기준으로 group by 를 하는 것이 아니다.
+
+SELECT o.product_id, p.product_name, p.price * sum(o.amount) as 'TOTAL_SALES'
+from FOOD_PRODUCT p join food_order o on p.product_id = o.product_id
+where year(o.produce_date) = '2022' and month(o.produce_date) = '05'
+GROUP BY o.product_id
+order by TOTAL_SALES DESC, o.PRODUCT_ID;
