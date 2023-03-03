@@ -1,4 +1,4 @@
--- timestampdiff(단위, 날짜1, 날짜2) 에서 날짜1이 더 오래된 날짜여야 값이 양수로 나온다. 
+-- timestampdiff(단위, 날짜1, 날짜2) 에서 날짜1이 더 오래된 날짜여야 값이 양수로 나온다.
 
 select i.animal_id, i.name
 from animal_ins i
