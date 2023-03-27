@@ -1,3 +1,5 @@
+import.java.util.Arrays;
+
 class AddMissingNumber {
     public int solution(int[] numbers) {
         int answer = 0;
@@ -14,4 +16,11 @@ class AddMissingNumber {
         }
         return answer;
     }
+    
+    static class AnotherSolution {
+        public int solution(int[] numbers) {
+            return 45-Arrays.stream(numbers).sum();
+        }
+    }
+ 
 }
