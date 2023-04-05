@@ -1,12 +1,12 @@
 import java.util.*;
 import java.util.stream.*;
 
-class Solution {
+class RemoveSmallestNumber {
     public int[] solution(int[] arr) {
-        int min = arr[0];
+        int min = 0;
         List<Integer> list = new ArrayList<>();
         for(int i = 0; i < arr.length; i++){
-            if(arr[i] < min) min = arr[i];
+            if(arr[i] < arr[min]) min = i;
             list.add(arr[i]);
         }
         list.remove(min);
