@@ -17,4 +17,17 @@ class PaintOver {
         }
         return answer;
     }
+    
+        public int solution2(int n, int m, int[] section) {
+        int roller = section[0];
+        int answer = 1;
+        
+        for(int i = 1; i < section.length; i++){
+            if(section[i] > roller + m -1){
+                answer++;
+                roller = section[i];
+            }
+        }
+        return answer;
+    }
 }
