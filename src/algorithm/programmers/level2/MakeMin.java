@@ -1,5 +1,5 @@
 import java.util.Arrays;
-class Solution
+class MakeMin
 {
     public int solution(int []A, int []B)
     {
